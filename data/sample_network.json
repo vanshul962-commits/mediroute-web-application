@@ -1,0 +1,431 @@
+{
+  "name": "Metro Central Emergency Grid",
+  "nodes": [
+    {
+      "id": "STA_ALPHA",
+      "label": "Station Alpha (North)",
+      "node_type": "station",
+      "x": 22.0,
+      "y": 82.0,
+      "zone": "North"
+    },
+    {
+      "id": "STA_BETA",
+      "label": "Station Beta (Harbor)",
+      "node_type": "station",
+      "x": 86.0,
+      "y": 28.0,
+      "zone": "East"
+    },
+    {
+      "id": "STA_GAMMA",
+      "label": "Station Gamma (West River)",
+      "node_type": "station",
+      "x": 16.0,
+      "y": 24.0,
+      "zone": "West"
+    },
+    {
+      "id": "HOSP_CENTRAL",
+      "label": "City General Hospital",
+      "node_type": "hospital",
+      "x": 52.0,
+      "y": 56.0,
+      "zone": "Central"
+    },
+    {
+      "id": "HOSP_TRAUMA",
+      "label": "St. Jude Trauma Center",
+      "node_type": "hospital",
+      "x": 82.0,
+      "y": 82.0,
+      "zone": "North-East"
+    },
+    {
+      "id": "HOSP_WEST",
+      "label": "Westside Community Clinic",
+      "node_type": "hospital",
+      "x": 24.0,
+      "y": 44.0,
+      "zone": "West"
+    },
+    {
+      "id": "INT_NORTH_GATE",
+      "label": "North Gate Avenue",
+      "node_type": "intersection",
+      "x": 36.0,
+      "y": 88.0,
+      "zone": "North"
+    },
+    {
+      "id": "INT_UNIVERSITY",
+      "label": "University Campus Gate",
+      "node_type": "intersection",
+      "x": 32.0,
+      "y": 66.0,
+      "zone": "North-West"
+    },
+    {
+      "id": "INT_INDUSTRIAL",
+      "label": "Industrial Logistics Park",
+      "node_type": "intersection",
+      "x": 14.0,
+      "y": 62.0,
+      "zone": "West"
+    },
+    {
+      "id": "INT_RIVER_CROSS",
+      "label": "River Bridge Crossing",
+      "node_type": "intersection",
+      "x": 36.0,
+      "y": 48.0,
+      "zone": "Central-West"
+    },
+    {
+      "id": "INT_DOWNTOWN",
+      "label": "Downtown Central Plaza",
+      "node_type": "intersection",
+      "x": 50.0,
+      "y": 42.0,
+      "zone": "Central"
+    },
+    {
+      "id": "INT_MIDTOWN",
+      "label": "Midtown Crossway",
+      "node_type": "intersection",
+      "x": 56.0,
+      "y": 68.0,
+      "zone": "Central"
+    },
+    {
+      "id": "INT_EAST_MALL",
+      "label": "Metro Shopping Promenade",
+      "node_type": "intersection",
+      "x": 68.0,
+      "y": 72.0,
+      "zone": "East"
+    },
+    {
+      "id": "INT_HIGHWAY_RAMP",
+      "label": "Highway 101 Onramp",
+      "node_type": "intersection",
+      "x": 68.0,
+      "y": 48.0,
+      "zone": "Central-East"
+    },
+    {
+      "id": "INT_TECH_PARK",
+      "label": "Tech District Sector 4",
+      "node_type": "intersection",
+      "x": 78.0,
+      "y": 46.0,
+      "zone": "East"
+    },
+    {
+      "id": "INT_HARBOR_VIEW",
+      "label": "Harbor Promenade",
+      "node_type": "intersection",
+      "x": 72.0,
+      "y": 24.0,
+      "zone": "East"
+    },
+    {
+      "id": "INT_AIRPORT_RD",
+      "label": "Airport Express Junction",
+      "node_type": "intersection",
+      "x": 84.0,
+      "y": 14.0,
+      "zone": "South-East"
+    },
+    {
+      "id": "INT_SOUTH_CIRCLE",
+      "label": "South Park Circle",
+      "node_type": "intersection",
+      "x": 50.0,
+      "y": 18.0,
+      "zone": "South"
+    },
+    {
+      "id": "INT_OLD_TOWN",
+      "label": "Historic Old Town",
+      "node_type": "intersection",
+      "x": 38.0,
+      "y": 28.0,
+      "zone": "South-West"
+    },
+    {
+      "id": "INT_SUBURB_SOUTH",
+      "label": "Meadowbrook Suburbs",
+      "node_type": "intersection",
+      "x": 28.0,
+      "y": 14.0,
+      "zone": "South"
+    }
+  ],
+  "edges": [
+    {
+      "u": "STA_ALPHA",
+      "v": "INT_NORTH_GATE",
+      "travel_time": 3.2,
+      "distance_km": 2.4,
+      "road_name": "Northway Blvd",
+      "bidirectional": true
+    },
+    {
+      "u": "STA_ALPHA",
+      "v": "INT_UNIVERSITY",
+      "travel_time": 4.1,
+      "distance_km": 3.0,
+      "road_name": "Academic Parkway",
+      "bidirectional": true
+    },
+    {
+      "u": "INT_NORTH_GATE",
+      "v": "INT_MIDTOWN",
+      "travel_time": 4.8,
+      "distance_km": 4.2,
+      "road_name": "Northern Arterial",
+      "bidirectional": true
+    },
+    {
+      "u": "INT_NORTH_GATE",
+      "v": "HOSP_TRAUMA",
+      "travel_time": 6.5,
+      "distance_km": 6.0,
+      "road_name": "Trauma Expressway",
+      "bidirectional": true
+    },
+    {
+      "u": "INT_MIDTOWN",
+      "v": "HOSP_TRAUMA",
+      "travel_time": 5.0,
+      "distance_km": 4.5,
+      "road_name": "Northeast Highway",
+      "bidirectional": true
+    },
+    {
+      "u": "INT_MIDTOWN",
+      "v": "INT_EAST_MALL",
+      "travel_time": 3.0,
+      "distance_km": 2.2,
+      "road_name": "Mall Access Road",
+      "bidirectional": true
+    },
+    {
+      "u": "INT_EAST_MALL",
+      "v": "HOSP_TRAUMA",
+      "travel_time": 3.5,
+      "distance_km": 2.8,
+      "road_name": "St. Jude Drive",
+      "bidirectional": true
+    },
+    {
+      "u": "INT_UNIVERSITY",
+      "v": "INT_MIDTOWN",
+      "travel_time": 4.5,
+      "distance_km": 4.0,
+      "road_name": "Midtown Tunnel",
+      "bidirectional": true
+    },
+    {
+      "u": "INT_MIDTOWN",
+      "v": "HOSP_CENTRAL",
+      "travel_time": 2.1,
+      "distance_km": 1.5,
+      "road_name": "Hospital Way",
+      "bidirectional": true
+    },
+    {
+      "u": "HOSP_CENTRAL",
+      "v": "INT_DOWNTOWN",
+      "travel_time": 2.5,
+      "distance_km": 1.8,
+      "road_name": "Civic Center Ave",
+      "bidirectional": true
+    },
+    {
+      "u": "HOSP_CENTRAL",
+      "v": "INT_HIGHWAY_RAMP",
+      "travel_time": 3.2,
+      "distance_km": 2.7,
+      "road_name": "Hwy 101 Spur",
+      "bidirectional": true
+    },
+    {
+      "u": "INT_DOWNTOWN",
+      "v": "INT_HIGHWAY_RAMP",
+      "travel_time": 3.0,
+      "distance_km": 2.5,
+      "road_name": "Downtown Arterial",
+      "bidirectional": true
+    },
+    {
+      "u": "INT_UNIVERSITY",
+      "v": "HOSP_WEST",
+      "travel_time": 3.8,
+      "distance_km": 3.2,
+      "road_name": "West Campus Lane",
+      "bidirectional": true
+    },
+    {
+      "u": "STA_GAMMA",
+      "v": "INT_SUBURB_SOUTH",
+      "travel_time": 3.0,
+      "distance_km": 2.2,
+      "road_name": "Riverfront Drive",
+      "bidirectional": true
+    },
+    {
+      "u": "STA_GAMMA",
+      "v": "INT_OLD_TOWN",
+      "travel_time": 4.0,
+      "distance_km": 3.1,
+      "road_name": "Canal Road",
+      "bidirectional": true
+    },
+    {
+      "u": "STA_GAMMA",
+      "v": "HOSP_WEST",
+      "travel_time": 3.5,
+      "distance_km": 2.8,
+      "road_name": "West Health Parkway",
+      "bidirectional": true
+    },
+    {
+      "u": "HOSP_WEST",
+      "v": "INT_INDUSTRIAL",
+      "travel_time": 3.2,
+      "distance_km": 2.5,
+      "road_name": "Industrial Bypass",
+      "bidirectional": true
+    },
+    {
+      "u": "INT_INDUSTRIAL",
+      "v": "INT_UNIVERSITY",
+      "travel_time": 3.7,
+      "distance_km": 3.0,
+      "road_name": "West Perimeter Rd",
+      "bidirectional": true
+    },
+    {
+      "u": "HOSP_WEST",
+      "v": "INT_RIVER_CROSS",
+      "travel_time": 2.6,
+      "distance_km": 1.9,
+      "road_name": "River Bridge West",
+      "bidirectional": true
+    },
+    {
+      "u": "INT_RIVER_CROSS",
+      "v": "INT_DOWNTOWN",
+      "travel_time": 2.8,
+      "distance_km": 2.0,
+      "road_name": "Grand River Bridge",
+      "bidirectional": true
+    },
+    {
+      "u": "INT_RIVER_CROSS",
+      "v": "INT_OLD_TOWN",
+      "travel_time": 3.4,
+      "distance_km": 2.6,
+      "road_name": "Heritage Way",
+      "bidirectional": true
+    },
+    {
+      "u": "INT_EAST_MALL",
+      "v": "INT_TECH_PARK",
+      "travel_time": 4.2,
+      "distance_km": 3.8,
+      "road_name": "Innovation Blvd",
+      "bidirectional": true
+    },
+    {
+      "u": "INT_HIGHWAY_RAMP",
+      "v": "INT_TECH_PARK",
+      "travel_time": 2.0,
+      "distance_km": 2.2,
+      "road_name": "Hwy 101 East Corridor",
+      "bidirectional": true
+    },
+    {
+      "u": "INT_TECH_PARK",
+      "v": "STA_BETA",
+      "travel_time": 3.1,
+      "distance_km": 2.6,
+      "road_name": "Harbor Access Rd",
+      "bidirectional": true
+    },
+    {
+      "u": "INT_TECH_PARK",
+      "v": "INT_HARBOR_VIEW",
+      "travel_time": 3.4,
+      "distance_km": 2.8,
+      "road_name": "Bayside Ave",
+      "bidirectional": true
+    },
+    {
+      "u": "STA_BETA",
+      "v": "INT_HARBOR_VIEW",
+      "travel_time": 2.2,
+      "distance_km": 1.8,
+      "road_name": "Pier View Street",
+      "bidirectional": true
+    },
+    {
+      "u": "STA_BETA",
+      "v": "INT_AIRPORT_RD",
+      "travel_time": 2.8,
+      "distance_km": 2.4,
+      "road_name": "Maritime Drive",
+      "bidirectional": true
+    },
+    {
+      "u": "INT_HARBOR_VIEW",
+      "v": "INT_AIRPORT_RD",
+      "travel_time": 2.6,
+      "distance_km": 2.1,
+      "road_name": "Coastline Blvd",
+      "bidirectional": true
+    },
+    {
+      "u": "INT_AIRPORT_RD",
+      "v": "INT_SOUTH_CIRCLE",
+      "travel_time": 5.2,
+      "distance_km": 5.5,
+      "road_name": "Airport Express Highway",
+      "bidirectional": true
+    },
+    {
+      "u": "INT_SOUTH_CIRCLE",
+      "v": "INT_DOWNTOWN",
+      "travel_time": 4.0,
+      "distance_km": 3.6,
+      "road_name": "South Main St",
+      "bidirectional": true
+    },
+    {
+      "u": "INT_SOUTH_CIRCLE",
+      "v": "INT_OLD_TOWN",
+      "travel_time": 2.9,
+      "distance_km": 2.2,
+      "road_name": "Parkway South",
+      "bidirectional": true
+    },
+    {
+      "u": "INT_OLD_TOWN",
+      "v": "INT_SUBURB_SOUTH",
+      "travel_time": 2.5,
+      "distance_km": 1.9,
+      "road_name": "Meadow Lane",
+      "bidirectional": true
+    },
+    {
+      "u": "INT_SUBURB_SOUTH",
+      "v": "INT_SOUTH_CIRCLE",
+      "travel_time": 3.8,
+      "distance_km": 3.2,
+      "road_name": "Southern Connector",
+      "bidirectional": true
+    }
+  ]
+}
